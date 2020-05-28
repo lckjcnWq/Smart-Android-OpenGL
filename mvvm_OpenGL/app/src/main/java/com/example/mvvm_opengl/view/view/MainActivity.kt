@@ -49,7 +49,7 @@ class MainActivity : BaseActivity<NoViewModel, ViewDataBinding>(), View.OnClickL
                startActivity(Intent(this,TriangleActivity::class.java))
            }
             R.id.btn_formal_draw_triangle ->{
-                ToastUtils.showShort("珍貴三角形")
+                ToastUtils.showShort("正規三角形")
             }
         }
     }

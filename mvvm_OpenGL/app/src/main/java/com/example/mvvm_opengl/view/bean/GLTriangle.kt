@@ -5,7 +5,7 @@ import com.example.mvvm_opengl.view.utils.GLUtil
 import java.nio.FloatBuffer
 
 
-class GLTriangle constructor(){
+class GLTriangle{
 
     // 顶点着色器的脚本
     var vertexShaderCode = " attribute vec4 vPosition;" +  // 应用程序传入顶点着色器的顶点位置

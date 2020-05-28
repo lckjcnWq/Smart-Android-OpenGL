@@ -4,6 +4,7 @@ import android.opengl.GLES20
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
+import java.nio.ShortBuffer
 
 
 object  GLUtil {
@@ -19,6 +20,22 @@ object  GLUtil {
         // 数组排列用nativeOrder
         qbb.order(ByteOrder.nativeOrder())
         mBuffer = qbb.asFloatBuffer()
+        mBuffer.put(arr)
+        mBuffer.position(0)
+        return mBuffer
+    }
+    /**
+     * float 数组转换成FloatBuffer，OpenGL才能使用
+     * @param arr
+     * @return
+     */
+    fun shortArray2ShortBuffer(arr: ShortArray): ShortBuffer? {
+        val mBuffer: ShortBuffer
+        // 初始化ByteBuffer，长度为arr数组的长度*4，因为一个int占4个字节
+        val qbb: ByteBuffer = ByteBuffer.allocateDirect(arr.size * 4)
+        // 数组排列用nativeOrder
+        qbb.order(ByteOrder.nativeOrder())
+        mBuffer = qbb.asShortBuffer()
         mBuffer.put(arr)
         mBuffer.position(0)
         return mBuffer
