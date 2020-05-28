@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_draw_triangle"
+        style="@style/BtnMain"
+        android:text="画个三角形"/>
+    <Button
+        android:id="@+id/btn_formal_draw_triangle"
+        style="@style/BtnMain"
+        android:text="画个正规的三角形"/>
+
+</LinearLayout>
