@@ -1,2 +1,3 @@
-rootProject.name='mvvm_OpenGL'
-include ':app',':mvvmlin'
+rootProject.name='MyOpenGL'
+include ':app'
+include ':lib_opengl'
