@@ -1,2 +1,4 @@
-# mvvm_OpenGL
-基于kotlin+Mvvm+OpenGL基础知识
+# OpenGL
+学习OpenGL基础知识
+其中涉及到画简单的三角形等图形
+照相机美颜 滤镜等基本功能
